@@ -2,17 +2,17 @@ import { Box, Container, Flex, Heading, Link, Text, VStack, HStack, Spacer } fro
 
 const Index = () => {
   return (
-    <Container maxW="container.xl">
+    <Container maxW="container.xl" bg="#fff1e5">
       {/* Navigation Bar */}
-      <Flex as="nav" bg="gray.800" color="white" p={4} align="center">
+      <Flex as="nav" bg="#fff1e5" color="black" p={4} align="center">
         <Heading size="md">Financial Times</Heading>
         <Spacer />
         <HStack spacing={8}>
-          <Link href="#" color="white">Home</Link>
-          <Link href="#" color="white">World</Link>
-          <Link href="#" color="white">Business</Link>
-          <Link href="#" color="white">Markets</Link>
-          <Link href="#" color="white">Opinion</Link>
+          <Link href="#" color="black">Home</Link>
+          <Link href="#" color="black">World</Link>
+          <Link href="#" color="black">Business</Link>
+          <Link href="#" color="black">Markets</Link>
+          <Link href="#" color="black">Opinion</Link>
         </HStack>
       </Flex>
 
@@ -41,7 +41,7 @@ const Index = () => {
         </Box>
 
         {/* Sidebar */}
-        <Box flex="1" mt={{ base: 8, md: 0 }}>
+        <Box flex="1" mt={{ base: 8, md: 0 }} bg="#fff1e5">
           <Heading size="md" mb={4}>Trending Topics</Heading>
           <VStack spacing={4} align="stretch">
             <Box bg="gray.100" p={4}>
@@ -58,13 +58,13 @@ const Index = () => {
       </Flex>
 
       {/* Footer */}
-      <Box as="footer" bg="gray.800" color="white" p={4} mt={8}>
+      <Box as="footer" bg="#fff1e5" color="black" p={4} mt={8}>
         <Flex direction={{ base: "column", md: "row" }} align="center">
           <HStack spacing={8} mb={{ base: 4, md: 0 }}>
-            <Link href="#" color="white">About</Link>
-            <Link href="#" color="white">Contact</Link>
-            <Link href="#" color="white">Privacy Policy</Link>
-            <Link href="#" color="white">Terms of Service</Link>
+            <Link href="#" color="black">About</Link>
+            <Link href="#" color="black">Contact</Link>
+            <Link href="#" color="black">Privacy Policy</Link>
+            <Link href="#" color="black">Terms of Service</Link>
           </HStack>
           <Spacer />
           <Text>&copy; 2023 Financial Times</Text>
